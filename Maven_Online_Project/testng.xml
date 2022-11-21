@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite2" parallel="tests" thread-count="2">
+
+
+<parameter name="url" value="https://www.google.com/"/>
+   <test name="Test1">
+     <parameter name="browser" value="chrome"></parameter>
+       <classes>
+     <class name="Cross_Browesing.NewTest_Cross_Browese"/>
+   </classes>
+ </test> <!-- Cross_test_xml -->
+  
+  
+  
+ <test name="Test2">
+   <parameter name="browser" value="edge"></parameter>
+      <classes>
+    <class name="Cross_Browesing.NewTest_Cross_Browese"/>
+   </classes>
+ </test> <!-- Cross_test_xml -->
+  
+</suite> <!-- Suite -->
